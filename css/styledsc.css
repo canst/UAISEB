@@ -1,0 +1,169 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url(../img/fond_jaune.png);
+}
+.diapo1{
+    width: 100%;
+    height: 400px;
+    margin-top: 10px;
+    background-image: url("../img/wintech1.jpg");
+    background-size: 100% 100%;
+    
+    -webkit-animation-name: diapo1;
+    -webkit-animation-duration: 19s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+}
+@-webkit-keyframes diapo1{
+    0%{background-image: url("../img/register.jpg");}
+    33%{background-image: url("../img/front1.jpeg");}
+    40%{background-image: url("../img/etu_login.png");}
+    50%{background-image: url("../img/wintech.jpg");}
+    65%{background-image: url("../img/wintech1.jpg");}
+}
+.center{
+    margin: 0 10% 0 10%;
+}
+.title1{
+    font-family: cursive;
+    border-bottom: 1px solid blue;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.contour{
+    border: 1px solid black;
+    padding-left: 20px;
+    border-radius: 10px;
+    background-color: cadetblue;
+}
+.num{
+    background-color: blue;
+    border-radius: 25px;
+    padding: 5px;
+}
+.red{
+    background-color: red;
+    height: 2px;
+    width: 100%;
+}
+.yellow{
+    background-color: yellow;
+    height: 2px;
+     width: 100%;
+}
+.green{
+    background-color: green;
+    height: 2px;
+     width: 100%;
+}
+
+.profil{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: cadetblue;
+    border-radius: 10px;
+    
+}
+.pro{
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-right: 50px;
+    width: 175px;
+    
+}
+
+
+img{
+    border-radius: 20px;
+}
+a{
+  text-decoration: none;   
+}
+.lien{
+    text-align: center;
+    font-family: cursive;
+    background-color: lightblue;
+    width: 350px;
+    border-radius: 30px;
+    margin-left: 40%;
+   
+    }
+.lien a h2:hover{
+    background-color: lawngreen;
+     border-radius: 30px;
+    font-style: italic;
+}
+
+/* Team Area css
+============================================================================================ */
+.team_area {
+  background: ; }
+
+.team_inner {
+  margin-bottom: -30px; }
+
+.team_item {
+  position: relative;
+  text-align: center;
+  margin-bottom: 30px; }
+  .team_item .team_img {
+    position: relative; }
+    .team_item .team_img img {
+      width: 100%; }
+    .team_item .team_img:before {
+      content: "";
+      background: rgba(255, 255, 255, 0.65);
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: all 300ms ease;
+      border-radius: 50%; }
+    .team_item .team_img .hover {
+      position: absolute;
+      left: 0px;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+      opacity: 0;
+      transition: all 300ms linear 0s; }
+      .team_item .team_img .hover a {
+        font-size: 14px;
+        color: #777777;
+        margin-right: 20px;
+        transition: all 300ms linear 0s; }
+        .team_item .team_img .hover a:last-child {
+          margin-right: 0px; }
+        .team_item .team_img .hover a:hover {
+          color: #4dbf1c; }
+  .team_item .team_name {
+    text-align: center;
+    margin-top: 30px; }
+    .team_item .team_name h4 {
+      margin-bottom: 5px;
+      color: #222222;
+      font-family: "Playfair Display", serif;
+      font-weight: bold;
+      font-size: 18px;
+      transition: all 300ms linear 0s; }
+    .team_item .team_name p {
+      font-size: 14px;
+      font-family: "Roboto", sans-serif;
+      color: #777777;
+      margin-bottom: 0px; }
+  .team_item:hover .team_img:before {
+    opacity: 1; }
+  .team_item:hover .team_img .hover {
+    opacity: 1; }
+  .team_item:hover .team_name h4 {
+    color: #4dbf1c; }
+
+/* End Team Area css
+============================================================================================ */
+    
